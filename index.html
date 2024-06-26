@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>main js</title>
+</head>
+<body>
+    <div class="continer">
+        
+    <div class="date">
+        <h1 id="this_day">date 20 / 06 / 2024 </h1>
+    </div>
+    <div class="title">
+        <h2>facture </h2>
+        <h3>laziz fresh yaourt </h3>
+    </div>
+    <table>    
+        <tr class="head">  
+            <td>almentation</td>
+            <td>   Petite T </td>
+            <td>Leprix</td>
+            <td>Grande T </td>
+            <td>     le prix </td>
+            <td>   Le totol  </td>  
+        </tr>
+        <tr class="body">
+            <td >Rnede 40</td>
+            <td id="r_s">this </td>
+            <td id="r_s_T">12 </td>
+            <td id="r_big">this </td>
+            <td id="r_big_T">20 </td>
+            <td id="r_big_To">200</td>
+        </tr>
+        <tr class="body">
+            <td >Jassi Choura </td>
+            <td id="Jassi_Choure_count">Mohammed </td>
+            <td id="Jassi_Choure_prixs">12 </td>
+            <td id="Jassi_Choure_count_for_big">20 </td>
+            <td id="Jassi_Choure_Prixs_for_big">20 </td>
+            <td id="Jassi_choure_total">20 </td>
+        </tr>
+        <tr class="body">
+            <td>Jassi Mht </td>
+            <td id="Jassi_Mht_count">Mohammed </td>
+            <td id="Jassi_Mht_prixs">12 </td>
+            <td id="Jassi_Mht_conut_for_big">20 </td>
+            <td id="Jassi_Mht_prixs_for_big">20 </td>
+            <td id="Jassi_Mht_total">20 </td>
+        </tr>
+        <tr class="body">
+            <td>Dembi   </td>
+            <td id="Dembi_count">Mohammed </td>
+            <td id="Dembi_prix">12 </td>
+            <td id="Dembi_big_count">20 </td>
+            <td id="Dembi_big_prix">20 </td>
+            <td id="Dembi">20 </td>
+        </tr>
+        <tr class="body">
+            <td>Bokassa    </td>
+            <td id="Bokassa_count">Mohammed </td>
+            <td id="Bokassa_prix">12 </td>
+            <td id="Bokassa_big_count">20 </td>
+            <td id="Bokassa_big_prix">20 </td>
+            <td id="Bokassa_total">20 </td>
+        </tr>
+
+        <tr class="total">
+            <td id=""> TOTAL : </td>
+            <td id="T_count"> </td>
+             <td id="T_SM_prix"> </td>
+            <td id="T_count_big"> </td>
+            <td id="T_count_big_prix"> </td>
+            <td id="T_All"> </td> 
+        </tr>      
+    </table>
+
+    <div class="footer">
+        <h4>Montant total :<span id="show_total">	</span></h4>
+        <div class="ckshi">
+            <span>389760r</span>
+            <span>la Singnature</span>
+        </div>
+    </div>
+
+
+
+    </div>
+    <div class="box-input">
+       
+        <div class="Rnede-40">
+            <h2><data value=""></data></h2>
+            <input id="date_pre" type="text" placeholder="add date اضافة التاريخ ">
+        </div>
+        <div class="Rnede-40">
+            <h2>Rnede-40</h2>
+            <input id="R_P" type="text" placeholder="Petite">
+            <input id="R_G" type="text" placeholder=" Grande ">
+        </div>
+
+        <div class="Rnede-40">
+            <h2>Jassi Choura </h2>
+            <input id="JC_p" type="text" placeholder="Petite">
+            <input  id="JC_G" type="text" placeholder=" Grande">
+        </div>
+        <div class="Rnede-40">
+            <h2>Jassi Mht  </h2>
+            <input id="JM_P" type="text" placeholder="Petite">
+            <input id="JM_G" type="text" placeholder=" Grande ">
+        </div>
+        <div class="Rnede-40">
+            <h2> Dembi     </h2>
+            <input id="Dembi_p" type="text" placeholder="Petite">
+            <input id="Dembi_G" type="text" placeholder=" Grande ">
+        </div>
+        <div class="Rnede-40">
+            <h2> Bokassa      </h2>
+            <input  id="B_p" type="text" placeholder="Petite">
+            <input  id="B_G"type="text" placeholder=" Grande ">
+        </div>
+        <div class="Rnede-40">
+            <h2> TOTAL :       </h2>
+             <input type="text" placeholder="TOTAL">
+        </div>
+        <button  onclick="displayText()" class="submit">submit</button>
+    </div>
+ 
+
+    <script src="js/main.js"></script>
+</body>
+</html>
