@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
     <title>main js</title>
 </head>
 <body>
-    <div class="continer">
+
+    <div id="continer" class="continer">
         
     <div class="date">
         <h1 id="this_day">date 20 / 06 / 2024 </h1>
@@ -87,6 +89,24 @@
 
 
     </div>
+    
+    <button id="saveAsPDF">حفظ كملف PDF</button>
+
+    <script>
+        document.getElementById('saveAsPDF').addEventListener('click', () => {
+            const element = document.getElementById('continer');
+            const opt = {
+                margin: 0.5,
+                filename: 'document.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2 },
+                jsPDF: { unit: 'in', format: 'a4', orientation: 'landscape' }
+            };
+
+            // إنشاء ملف PDF
+            html2pdf().from(element).set(opt).save();
+        });
+    </script>
     <div class="box-input">
        
         <div class="Rnede-40">
@@ -119,11 +139,12 @@
             <input  id="B_p" type="text" placeholder="Petite">
             <input  id="B_G"type="text" placeholder=" Grande ">
         </div>
-   
-        <button  onclick="displayText()" class="submit">حساب الفاتورة </button>
+      <button  onclick="displayText()" class="submit">حساب الفاتورة </button>
+
     </div>
  
 
     <script src="js/main.js"></script>
 </body>
 </html>
+<!-- الحمد لله  -->
