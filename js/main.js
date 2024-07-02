@@ -10,7 +10,9 @@ function displayText() {
         let Dembi_G = document.getElementById('Dembi_G').value;
         let B_p = document.getElementById('B_p').value;
         let B_G = document.getElementById('B_G').value;
-        
+        let IPNUM = document.getElementById('IPNUM').value;
+         //    IP NUMBER INSIRT FUNCTION 
+        document.getElementById('MY_IP_NUMBER').innerText = IPNUM;
         //******* Rnede 40 *********************************************** */
          let R_c = document.getElementById('r_s').innerText = R_P;
         let a = document.getElementById('r_s_T').innerText = (R_P * 40);
